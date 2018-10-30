@@ -9,6 +9,8 @@
 import UIKit
 import SceneKit
 import ARKit
+import AVFoundation
+import SpriteKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
@@ -69,14 +71,35 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let planeNode = SCNNode(geometry: plane)
             planeNode.eulerAngles.x = -.pi / 2
             
-            let snorlaxScene = SCNScene(named: "art.scnassets/Snorlax/snorlax.scn")!
-            let snorlaxNode = snorlaxScene.rootNode.childNodes.first!
+//            let snorlaxScene = SCNScene(named: "art.scnassets/Snorlax/snorlax.scn")!
+//            let snorlaxNode = snorlaxScene.rootNode.childNodes.first!
             
-            snorlaxNode.position = SCNVector3Zero
-            snorlaxNode.scale = SCNVector3(x: 0.0015, y: 0.0015, z: 0.0015)
-            planeNode.addChildNode(snorlaxNode)
+//            snorlaxNode.position = SCNVector3Zero
+//            snorlaxNode.scale = SCNVector3(x: 0.0015, y: 0.0015, z: 0.0015)
+//            planeNode.addChildNode(snorlaxNode)
             
+            // DO STUFF WITH VIDEO
+            let videoURL = Bundle.main.url(forResource: "HakunaMatata2", withExtension: "mp4")!
+            let videoPlayer = AVPlayer(url: videoURL)
+            let videoScene = SKScene(size: CGSize(width: 500, height: 500))
+            
+            let videoNode = SKVideoNode(avPlayer: videoPlayer)
+            
+            videoNode.position = CGPoint(x: videoScene.size.width / 2, y: videoScene.size.height / 2)
+            
+            videoNode.size = videoScene.size
+            videoNode.yScale = -1
+            
+            videoScene.addChild(videoNode)
+            
+            plane.firstMaterial?.diffuse.contents = videoScene
+//
             node.addChildNode(planeNode)
+            videoPlayer.play()
+            
+            
+            
+            
         }
         
         return node

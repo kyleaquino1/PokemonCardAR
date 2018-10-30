@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E05EF522187F66E003F8BA2 /* snorlaxImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E05EF512187F66D003F8BA2 /* snorlaxImg.jpg */; };
+		8E05EF6A21880B3C003F8BA2 /* HakunaMatata2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8E05EF6921880B3C003F8BA2 /* HakunaMatata2.mp4 */; };
 		8E4966D22187E099006E1323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4966D12187E099006E1323 /* AppDelegate.swift */; };
 		8E4966D42187E099006E1323 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4966D32187E099006E1323 /* art.scnassets */; };
 		8E4966D62187E099006E1323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4966D52187E099006E1323 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8E05EF512187F66D003F8BA2 /* snorlaxImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snorlaxImg.jpg; sourceTree = "<group>"; };
+		8E05EF6921880B3C003F8BA2 /* HakunaMatata2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HakunaMatata2.mp4; sourceTree = "<group>"; };
 		8E4966CE2187E099006E1323 /* PokemonCardAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCardAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4966D12187E099006E1323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4966D32187E099006E1323 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8E4966DC2187E09B006E1323 /* LaunchScreen.storyboard */,
 				8E4966DF2187E09B006E1323 /* Info.plist */,
 				8E05EF512187F66D003F8BA2 /* snorlaxImg.jpg */,
+				8E05EF6921880B3C003F8BA2 /* HakunaMatata2.mp4 */,
 			);
 			path = PokemonCardAR;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				8E4966DE2187E09B006E1323 /* LaunchScreen.storyboard in Resources */,
 				8E4966DB2187E09B006E1323 /* Assets.xcassets in Resources */,
 				8E05EF522187F66E003F8BA2 /* snorlaxImg.jpg in Resources */,
+				8E05EF6A21880B3C003F8BA2 /* HakunaMatata2.mp4 in Resources */,
 				8E4966D92187E099006E1323 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
